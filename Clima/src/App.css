@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.main__container {
+  background-image: radial-gradient(
+    circle,
+    #d5f3ff,
+    #b6e4f8,
+    #97d4f2,
+    #76c4ed,
+    #51b4e8
+  );
+
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  
+}
+
+.card {
+  width: 300px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+
+  border-radius: 10px;
+}
+
+input {
+  width: 10rem;
+  height: 2rem;
+  padding: 1rem;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(14.5px);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+}
+
+input:focus {
+  outline: none;
+}
+
+.change__grades {
+  width: 178px;
+  height: 38px;
+  background-color: #38a0d8;
+  border-radius: 1rem;
+  filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0, 0.25));
+  offset: 0px 4.85px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.change__grades:active {
+  color: #38a0d8;
+  background-color: white;
+  width: 160px;
+}
+
+.card_grade_and_sun {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.card__image_clima > img {
+  padding: 10px;
+  width: 250px;
+  height: 190px;
+  animation: zoom 2s infinite alternate;
+}
+
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+
+.card__gadre {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card__gadre > h1 {
+  color: #026eed;
+  margin: 0 auto;
+  margin-top: -20px;
+  font-size: 5rem;
+  height: 9rem;
+}
+.card__temp__description {
+  color: #086fa7;
+  margin-top: -40px;
+  margin-left: 3rem;
+  width: 290px;
+  height: 80px;
+}
+
+.card_city {
+  display: flex;
+  align-items: center;
+  margin-top: 4rem;
+  color: #086fa7;
+}
+
+.card_city > h2 {
+  margin-left: 1.8rem;
+  font-size: 1.2rem;
+}
+
+.card_city > p {
+  margin-left: 3.4rem;
+}
+
+.card_search__and__switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+
+/* ------------------------------------------------------------------- */
+/* ----------------------ESTILOS DEL DARK MODE------------------------ */
+/* ------------------------------------------------------------------- */
+
+.main__containerDark {
+  background-image: radial-gradient(
+    circle,
+    #53388f,
+    #493581,
+    #3f3174,
+    #372d66,
+    #2f2958
+  );
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  
+  
+}
+
+.card__gadreDark{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card__gadreDark > h1 {
+    margin: 0 auto;
+    margin-top: -20px;
+    font-size: 5rem;
+    height: 9rem;
+    color: white;
+}
+
+.card__temp__descriptionDark {
+  color: white;
+  margin-top: -40px;
+  margin-left: 3rem;
+  width: 290px;
+  height: 80px;
+}
+
+.card_cityDark {
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.card_cityDark > h2 {
+  margin-left: 1.8rem;
+  font-size: 1.2rem;
+}
+
+.card_cityDark > p {
+  margin-left: 3.4rem;
+}
+
+.inputDark {
+  width: 10rem;
+  height: 2rem;
+  padding: 1rem;
+  border: none;
+  background: #201f3c;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(14.5px);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.change__gradesDark {
+  width: 178px;
+  height: 38px;
+  background-color: #7d69f1;
+  border-radius: 1rem;
+  filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0, 0.25));
+  offset: 0px 4.85px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  
+}
+
+.change__gradesDark:active {
+  color: #7d69f1;
+  background-color: white;
+  width: 160px;
+}
+
+
+
+/* ESTILOS DEL LOADING */
+
+
+
+
+.loading{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  background-image: radial-gradient(
+    circle,
+    #d5f3ff,
+    #b6e4f8,
+    #97d4f2,
+    #76c4ed,
+    #51b4e8
+  );
+ 
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+opacity: 1;
+transition: opacity 1s ease-in-out;
+}
+
+.loading.hidden {
+  opacity: 0;
+ 
+}
+
+
+.loader {
+  z-index: 100;
+  width: 180px;
+  height: 140px;
+  display: block;
+  margin: 0 auto 20px;
+  background-image: radial-gradient(circle 25px at 25px 25px, #FFF 100%, transparent 0), radial-gradient(circle 50px at 50px 50px, #FFF 100%, transparent 0), radial-gradient(circle 25px at 25px 25px, #FFF 100%, transparent 0), radial-gradient(circle 15px at 15px 15px, #FFF 100%, transparent 0), linear-gradient(#FFF 50px, transparent 0);
+  background-size: 50px 50px, 100px 75px, 50px 50px, 30px 32px, 136px 20px;
+  background-repeat: no-repeat;
+  background-position: 0px 30px, 30px 0px, 113px 29px, 147px 50px, 23px 60px;
+  position: relative;
+  box-sizing: border-box;
+}
+.loader::after {
+  content: '';  
+  position: absolute;
+  left: 2px;
+  top: 65px;
+  width: 2px;
+  height: 6px;
+  color: #FFF;
+  box-sizing: border-box;
+  animation: animloader 0.6s linear infinite;
+}
+
+@keyframes animloader {
+  0% {
+    box-shadow: 25px 0 white, 50px 0 white, 75px 0 white, 100px 0 white, 125px 0 white, 150px 0 white, 25px 0 white, 50px 0 white, 75px 0 white, 100px 0 white, 125px 0 white, 150px 0 white;
+  }
+  50% {
+    box-shadow: 25px 20px white, 50px 60px rgba(255, 255, 255, 0), 75px 30px rgba(255, 255, 255, 0), 100px 70px rgba(255, 255, 255, 0), 125px 40px white, 150px 60px rgba(255, 255, 255, 0), 25px 20px white, 50px 30px white, 75px 10px white, 100px 30px white, 125px 30px rgba(255, 255, 255, 0), 150px 30px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 25px 60px rgba(255, 255, 255, 0), 50px 60px rgba(255, 255, 255, 0), 75px 50px rgba(255, 255, 255, 0), 100px 70px rgba(255, 255, 255, 0), 125px 70px rgba(255, 255, 255, 0), 150px 60px rgba(255, 255, 255, 0), 25px 80px rgba(255, 255, 255, 0), 50px 80px rgba(255, 255, 255, 0), 75px 70px rgba(255, 255, 255, 0), 100px 60px rgba(255, 255, 255, 0), 125px 30px rgba(255, 255, 255, 0), 150px 30px rgba(255, 255, 255, 0);
+  }
+}
+
+
+
+
